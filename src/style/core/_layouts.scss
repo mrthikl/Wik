@@ -1,0 +1,64 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // => 10px = 1rem
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: $container-max-width;
+    margin: auto;
+    scroll-behavior: smooth;
+    @include text( 'kr', var(--body-fs), var(--body-lh));
+    @include customscroll(10px, none, $dark-cl);
+    color: $dark-cl;
+    background: $white-cl;
+    position: relative;
+    .container-fluid {
+        width: 100%;
+        padding-right: calc(var(--gap) / 2);
+        padding-left: calc(var(--gap) / 2);
+        margin-right: auto;
+        margin-left: auto;
+        @include xs {
+            padding-right: var(--gap);
+            padding-left: var(--gap);
+        }
+    }
+    .mainwrapper {
+        width: 100%;
+        margin: auto;
+        @include visible;
+    }
+    @include lg {
+        // CSS responsive large desktop
+    }
+    @include md {
+        // CSS responsive desktop
+    }
+    @include sm {
+        // CSS responsive tablet
+        .container {
+            padding-left: var(--gap);
+            padding-right: var(--gap);
+        }
+    }
+    @include xs {
+        // CSS responsive mobile
+    }
+    @include xxs {
+        // CSS responsive small mobile
+    }
+}
