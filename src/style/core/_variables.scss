@@ -18,31 +18,22 @@ $lg-max: ($lg-min - 1); // Large Desktop
 $white-cl: #fff;
 $black-cl: #000;
 $dark-cl: #333333;
+$blue-cl: #6366F1;
+$orange-cl: #E05023;
 // darkmode
 $t: 0.5s;
 :root {
     // font-size & line-height heading
-    --h1-fs: 4rem;
-    --h1-lh: 1.14;
-    --h2-fs: 3.2rem;
-    --h2-lh: 1.2;
-    --h3-fs: 2.4rem;
-    --h3-lh: 1.25;
-    --h4-fs: 2.4rem;
-    --h5-fs: 1.8rem;
-    --h5-lh: 1.33;
+    --h1-fs: 9.6rem;
+    --h1-lh: 11.25rem;
     --body-fs: 1.8rem;
     --body-lh: 2.4rem;
-    --t15-fs: 1.5rem;
-    --t15-lh: 2.5rem;
-    --t12-fs: 1.2rem;
-    --t12-lh: 2.2rem;
-    --t14-fs: 1.4rem;
-    --t14-lh: 2.4rem;
-    --spacing-sm: 12px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 36px;
+    --t22-fs: 2.2rem;
+    --t22-lh: 2.578rem;
+    --t21-fs: 2.1rem;
+    --t21-lh: 2.461rem;
+    --t20-fs: 2rem;
+    --t20-lh: 2.344rem;
     // Genaral Variable
     --gap: 30px;
     --pdss: 30px;
