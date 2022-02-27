@@ -1,3 +1,12 @@
-header.header 
-    a.logo(href="/")
-         
+header.header.w-full(class="xl:fixed top-0 z-10")
+    .container.textbox.m-auto.flex.justify-between.items-center
+        a.logo.flex.items-center.rl.text.--t28(href="/") /kwik/
+        nav.menu
+            ul.flex.gap-20.r.text.--t24 
+                li 
+                    a(href="/") About
+                li    
+                    a(href="/") FAQs
+                li  
+                    a(href="/") Widgets
+        .btn-header.rl.text.--t28.text-white.cursor-pointer.bg-indigo-500.rounded-b-xl Join Us

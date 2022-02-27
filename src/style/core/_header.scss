@@ -1,0 +1,6 @@
+.header {
+    height: var(--height-header);
+    .menu {
+        @include mid(false);
+    }
+}

@@ -32,7 +32,7 @@ body {
         padding-left: calc(var(--gap) / 2);
         margin-right: auto;
         margin-left: auto;
-        @include xs {
+        @include md {
             padding-right: var(--gap);
             padding-left: var(--gap);
         }
@@ -42,23 +42,23 @@ body {
         margin: auto;
         @include visible;
     }
-    @include lg {
+    @include xl2 {
         // CSS responsive large desktop
     }
-    @include md {
+    @include xl {
         // CSS responsive desktop
     }
-    @include sm {
+    @include lg {
         // CSS responsive tablet
         .container {
             padding-left: var(--gap);
             padding-right: var(--gap);
         }
     }
-    @include xs {
+    @include md {
         // CSS responsive mobile
     }
-    @include xxs {
+    @include sm {
         // CSS responsive small mobile
     }
 }

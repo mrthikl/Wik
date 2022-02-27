@@ -1,0 +1,19 @@
+.hero {
+    &-elip {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 164, 164, 0.45) 0%, rgba(255, 150, 150, 0) 100%);
+        @include size(731px);
+        @include position(absolute, $l: -270px, $t: 0);
+    }
+    &-icon {
+        position: absolute;
+        &.--play {
+            @include position(absolute, $t: 0, $r: 200px);
+        }
+        &.--like {
+            @include position(absolute, $t: -65px, $l: 375px);
+        }
+        &.--box {
+            @include position(absolute, $b: 0, $r: 100px);
+        }
+    }
+}

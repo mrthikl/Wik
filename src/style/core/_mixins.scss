@@ -1,35 +1,34 @@
 // MIXINS
 // large desktop
-@mixin lg {
+@mixin xl2 {
     @media screen and (min-width: $lg-min) {
         @content;
     }
 }
 
 // desktop
+@mixin xl {
+    @media screen and (min-width: $xl-min) {
+        @content;
+    }
+}
+
+// tablet
 @mixin md {
     @media screen and (min-width: $md-min) {
         @content;
     }
 }
 
-// tablet
-@mixin sm {
-    @media screen and (min-width: $sm-min) {
+@mixin lg {
+    @media screen and (min-width: $lg-min) {
         @content;
     }
 }
 
 // mobile
-@mixin xs {
-    @media screen and (min-width: $xs-min) {
-        @content;
-    }
-}
-
-// small mobile
-@mixin xxs {
-    @media (min-width: $xxs-min) {
+@mixin sm {
+    @media screen and (min-width: $sm-min) {
         @content;
     }
 }

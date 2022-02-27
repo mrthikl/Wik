@@ -1,36 +1,56 @@
 .textbox {
-    &.--center {
-        text-align: center;
-    }
-    .--letter {
-        letter-spacing: 1px;
-    }
     .heading {
         &.--h1 {
             @include text(inherit, var(--h1-fs), var(--h1-lh));
         }
-        &.--h2 {
-            @include text(inherit, var(--h2-fs), var(--h2-lh));
-        }
-        &.--h3 {
-            @include text(inherit, var(--h3-fs), var(--h3-lh));
-        }
-        &.--h4 {
-            @include text(inherit, var(--h3-fs), var(--h3-lh));
-        }
-        &.--h5 {
-            @include text(inherit, var(--h3-fs), var(--h3-lh));
-        }
+        // &.--h2 {
+        //     @include text(inherit, var(--h2-fs), var(--h2-lh));
+        // }
+        // &.--h3 {
+        //     @include text(inherit, var(--h3-fs), var(--h3-lh));
+        // }
+        // &.--h4 {
+        //     @include text(inherit, var(--h3-fs), var(--h3-lh));
+        // }
+        // &.--h5 {
+        //     @include text(inherit, var(--h3-fs), var(--h3-lh));
+        // }
     }
     .text {
-        &.--t15 {
-            @include text(inherit, var(--t15-fs), var(--t15-lh));
+        &.--t28 {
+            @include text(inherit, var(--t28-fs), var(--t28-lh));
         }
-        &.--t14 {
-            @include text(inherit, var(--t14-fs), var(--t14-lh));
+        &.--t24 {
+            @include text(inherit, var(--t24-fs), var(--t24-lh));
         }
-        &.--t12 {
-            @include text(inherit, var(--t12-fs), var(--t12-lh));
+        &.--t22 {
+            @include text(inherit, var(--t22-fs), var(--t22-lh));
+        }
+        &.--t21 {
+            @include text(inherit, var(--t21-fs), var(--t21-lh));
+        }
+        &.--t20 {
+            @include text(inherit, var(--t20-fs), var(--t20-lh));
         }
     }
+}
+
+.rl {
+    font-family: "rl" !important;
+}
+
+.r {
+    font-family: "r" !important;
+}
+
+.jb {
+    font-family: "jb" !important;
+}
+
+.blue-cl {
+    color: $blue-cl;
+}
+
+.btn-header {
+    padding: 24px 57px;
 }

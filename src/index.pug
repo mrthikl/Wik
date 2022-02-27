@@ -1,5 +1,11 @@
 extends templates/layout
 
 block content 
-    main.home
-        
+    main.home(class="xl:h-screen overflow-y-hidden")
+        section.hero.relative.pt-20(class="xl:h-full flex items-center")
+            .hero-elip
+            .container.textbox.m-auto.text-center
+                h1.heading.--h1.relative <span class="inline-block max-w-5xl">The best way to connect</span> <br> <span class="text-indigo-500"> with your audience </span>
+                    img.hero-icon.--like(src="./img/assets/like-hero.svg", alt="icon")
+                    img.hero-icon.--play(src="./img/assets/play-hero.svg", alt="icon")
+                    img.hero-icon.--box(src="./img/assets/box-hero.svg", alt="icon")
