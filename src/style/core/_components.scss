@@ -43,8 +43,11 @@
             @include transition(transform $t ease)
         }
     }
+    .sidebar-menu {
+        height: calc(100% - 250px);
+        @include customscroll(5px, transparent, $slate-cl)
+    }
     .sidebar-info {
-        width: calc(100% - 3rem);
         &-user {
             .user-work {
                 @include size(6px);

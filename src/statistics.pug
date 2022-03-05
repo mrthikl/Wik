@@ -1,9 +1,9 @@
 extends templates/layout
 block content 
-    .sidebar-left.textbox.fixed.top-0.z-10.p-4.h-screen.bg-white(class="w-11/12 lg:p-6")
-        .logo-bar.text-center.mb-10
+    .sidebar-left.textbox.fixed.top-0.z-10.h-screen.bg-white(class="w-11/12")
+        .logo-bar.text-center.mb-10.px-4.pt-4(class="lg:px-6 pt-6")
             a.logo.rb.heading.--h2(href="/") /kwik/
-        nav.sidebar-menu
+        nav.sidebar-menu.overflow-y-auto.px-4(class="lg:px-6")
             ul.flex.flex-col
                 li 
                     a.flex.items-center.gap-4.py-6(href="/") 
@@ -24,7 +24,7 @@ block content
                     a.flex.items-center.gap-4.py-6(href="/") 
                         img.w-7(src="./img/assets/camp.svg", alt="icon")
                         span Campaign
-        .sidebar-info.absolute.bottom-4.px-3
+        .sidebar-info.absolute.bottom-4.px-7(class="lg:px-9")
             .sidebar-info-user.flex.items-center.gap-4
                 .user-image
                     img.w-full.h-full.object-cover(src="./img/images/user.png", alt="user image")
