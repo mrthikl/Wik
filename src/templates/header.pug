@@ -1,7 +1,7 @@
-header.header.w-full(class="xl:fixed top-0 z-10")
+header.header.w-full.fixed.top-0.z-10
     .container.textbox.m-auto.flex.justify-between.items-center
         a.logo.flex.items-center.rl.text.--t28(href="/") /kwik/
-        nav.menu
+        nav.menu.hidden(class="lg:block")
             ul.flex.gap-20.r.text.--t24 
                 li 
                     a(href="/") About
@@ -9,4 +9,18 @@ header.header.w-full(class="xl:fixed top-0 z-10")
                     a(href="/") FAQs
                 li  
                     a(href="/") Widgets
-        .btn-header.rl.text.--t28.text-white.cursor-pointer.bg-indigo-500.rounded-b-xl Join Us
+        .right.flex.items-center.gap-10
+            .btn-header.rl.text.--t28.text-white.cursor-pointer.bg-indigo-500.rounded-b-xl Join Us
+            .btn-menu.--open.relative.flex.items-center(class="lg:hidden") 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+nav.nav.textbox.fixed.top-0.z-10.text-white.flex.items-center.justify-center.w-full.h-screen.bg-indigo-500
+    .btn-menu.--close.absolute.top-3.right-3.
+        <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+    ul.text-center.flex.flex-col.gap-20.r.text.--t24 
+        li 
+            a(href="/") About
+        li    
+            a(href="/") FAQs
+        li  
+            a(href="/") Widgets

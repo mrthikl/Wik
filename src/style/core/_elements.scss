@@ -52,5 +52,33 @@
 }
 
 .btn-header {
-    padding: 24px 57px;
+    padding: 12px 23px;
+    @include md {
+        padding: 24px 57px;
+    }
+}
+
+.btn-menu {
+    padding: 10px;
+    @include size(50px);
+    @include flex;
+    svg {
+        min-width: 40px;
+        position: absolute;
+        @include size(40px);
+        @include transition(transform $t ease);
+        &:nth-of-type(2) {
+            @include transform(scale(0));
+        }
+    }
+    &.active {
+        svg {
+            &:nth-of-type(1) {
+                @include transform(scale(0));
+            }
+            &:nth-of-type(2) {
+                @include transform(scale(1));
+            }
+        }
+    }
 }

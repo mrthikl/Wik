@@ -21,12 +21,12 @@ body {
     max-width: $container-max-width;
     margin: auto;
     scroll-behavior: smooth;
-    @include text( 'r', var(--body-fs), var(--body-lh));
+    @include text("r", var(--body-fs), var(--body-lh));
     @include customscroll(10px, none, $dark-cl);
     color: $dark-cl;
     background: $white-cl;
     position: relative;
-    .container-fluid {
+    .container {
         width: 100%;
         padding-right: calc(var(--gap) / 2);
         padding-left: calc(var(--gap) / 2);
@@ -50,10 +50,6 @@ body {
     }
     @include lg {
         // CSS responsive tablet
-        .container {
-            padding-left: var(--gap);
-            padding-right: var(--gap);
-        }
     }
     @include md {
         // CSS responsive mobile

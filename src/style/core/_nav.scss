@@ -1,0 +1,20 @@
+.nav {
+    transform: translateX(100%);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(99, 102, 241, 0.6);
+    @include transition(transform $t ease);
+    &.active {
+        transform: translateX(0);
+        ul {
+            transform: translateX(0);
+            opacity: 1;
+            transition-delay: 0.3s;
+        }
+    }
+    ul {
+        transform: translateX(50px);
+        opacity: 0;
+        @include transition($t cubic-bezier(0.215, 0.61, 0.355, 1));
+        transition-property: opacity, transform;
+    }
+}

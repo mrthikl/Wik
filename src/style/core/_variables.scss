@@ -43,10 +43,18 @@ $t: 0.5s;
     --pdss: 30px;
     --height-header: 80px;
     @media (max-width: $xl-max) {
-        --h4-fs: 2rem;
-        --h4-lh: 1;
+        --h1-fs: 7rem;
+        --h1-lh: 8rem;
     }
     @media (max-width: $lg-max) {}
-    @media (max-width: $md-max) {}
+    @media (max-width: $md-max) {
+        --height-header: 54px;
+        --h1-fs: 6rem;
+        --h1-lh: 7rem;
+        --t28-fs: 2rem;
+        --t28-lh: 3rem;
+        --t24-fs: 1.8rem;
+        --t24-lh: 2.8rem;
+    }
     @media (max-width: $sm-max) {}
 }

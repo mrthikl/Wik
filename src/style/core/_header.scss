@@ -3,4 +3,9 @@
     .menu {
         @include mid(false);
     }
+    @include maxW($md-max) {
+        .menu {
+            display: none;
+        }
+    }
 }

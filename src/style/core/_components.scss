@@ -1,11 +1,17 @@
 .hero {
-    &-elip {
-        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 164, 164, 0.45) 0%, rgba(255, 150, 150, 0) 100%);
-        @include size(731px);
+    &::before {
+        background: radial-gradient( 50% 50% at 50% 50%, rgba(255, 164, 164, 0.45) 0%, rgba(255, 150, 150, 0) 100%);
+        max-width: 731px;
+        max-height: 731px;
+        content: "";
+        @include size;
         @include position(absolute, $l: -270px, $t: 0);
     }
     &-icon {
-        position: absolute;
+        z-index: -1 !important;
+        @include maxW($md-max) {
+            display: none;
+        }
         &.--play {
             @include position(absolute, $t: 0, $r: 200px);
         }
