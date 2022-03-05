@@ -41,7 +41,7 @@ const css = () =>
     src("src/index.scss").pipe(sass()).pipe(postcss([
         require('tailwindcss'),
         require('autoprefixer'),
-    ])).pipe(uglifycss()).pipe(dest("public/css"));
+    ])).pipe(dest("public/css"));
 const img = () => src("src/img/**/*").pipe(imagein()).pipe(dest("public/img"));
 const copy = () =>
     src(["src/fonts/**", "src/videos/**"], {
