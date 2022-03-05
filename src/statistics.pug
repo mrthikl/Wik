@@ -1,0 +1,48 @@
+extends templates/layout
+block content 
+    .sidebar-left.textbox.fixed.top-0.z-10.p-4.h-screen.bg-white(class="w-11/12 lg:p-6")
+        .logo-bar.text-center.mb-10
+            a.logo.rb.heading.--h2(href="/") /kwik/
+        nav.sidebar-menu
+            ul.flex.flex-col
+                li 
+                    a.flex.items-center.gap-4.py-6(href="/") 
+                        img.w-7(src="./img/assets/static.svg", alt="icon")
+                        span Statistics
+                li.has-drop.overflow-hidden 
+                    a.flex.items-center.justify-between.py-6(href="/") 
+                        .flex.items-center.gap-4 
+                            img.w-7(src="./img/assets/box.svg", alt="icon")
+                            span Alert Boxes
+                        img.has-drop-toggle(src="./img/assets/angle.svg", alt="icon")
+                    ul.sub-menu.ml-11.mt-2.flex.flex-col
+                        li 
+                            a.rounded-lg.block.py-4.pl-4.transition(class="hover:bg-gray-300" href="/") Default 
+                        li 
+                            a.rounded-lg.block.py-4.pl-4.transition(class="hover:bg-gray-300" href="") Tet's Holiday
+                li 
+                    a.flex.items-center.gap-4.py-6(href="/") 
+                        img.w-7(src="./img/assets/camp.svg", alt="icon")
+                        span Campaign
+        .sidebar-info.absolute.bottom-4.px-3
+            .sidebar-info-user.flex.items-center.gap-4
+                .user-image
+                    img.w-full.h-full.object-cover(src="./img/images/user.png", alt="user image")
+                .user-info.flex.flex-col.gap-2
+                    p.rb.text.--t21.flex.items-center.gap-2
+                        a(href="/") Nguyễn Thành Nhân
+                        a.user-work.--green.inline-block(href="/")
+                    a.rl.text.--t21(href="/") tuinhanne
+            .line.w-full.h-1.bg-gray-400.my-5
+            .darkmode.p-4.bg-gray-200.rounded-xl.flex.justify-between.gap-4
+                .darkmode-btn.active.flex.items-center.gap-4.px-14.py-2.rounded-xl.text.--t21.rb
+                    img(src="./img/assets/sun.svg", alt="icon")
+                    span Light
+                .darkmode-btn.flex.items-center.gap-4.px-14.py-2.rounded-xl.text.--t21.rb
+                    img(src="./img/assets/moon.svg", alt="icon")
+                    span Dark
+
+
+
+    main.statistics.bg-grey-200.h-screen
+        h1 hello

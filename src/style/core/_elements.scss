@@ -3,9 +3,9 @@
         &.--h1 {
             @include text(inherit, var(--h1-fs), var(--h1-lh));
         }
-        // &.--h2 {
-        //     @include text(inherit, var(--h2-fs), var(--h2-lh));
-        // }
+        &.--h2 {
+            @include text(inherit, var(--h2-fs), var(--h2-lh));
+        }
         // &.--h3 {
         //     @include text(inherit, var(--h3-fs), var(--h3-lh));
         // }
@@ -80,5 +80,18 @@
                 @include transform(scale(1));
             }
         }
+    }
+}
+
+.darkmode-btn {
+    cursor: pointer;
+    @include transition( $t ease);
+    transition-property: box-shadow, background;
+    img {
+        @include size(16px);
+    }
+    &.active {
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+        background: $white-cl;
     }
 }

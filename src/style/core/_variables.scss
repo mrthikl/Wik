@@ -20,12 +20,16 @@ $black-cl: #000;
 $dark-cl: rgb(63, 63, 63);
 $blue-cl: #6366F1;
 $orange-cl: #E05023;
+$green-cl: #059669;
+$slate-cl: #E2E8F0;
 // darkmode
 $t: 0.5s;
 :root {
     // font-size & line-height heading
     --h1-fs: 9.6rem;
     --h1-lh: 11.25rem;
+    --h2-fs: 4.4rem;
+    --h2-lh: 5.156rem;
     --body-fs: 1.8rem;
     --body-lh: 2.4rem;
     --t28-fs: 2.8rem;
@@ -51,6 +55,8 @@ $t: 0.5s;
         --height-header: 54px;
         --h1-fs: 6rem;
         --h1-lh: 7rem;
+        --h2-fs: 3.4rem;
+        --h2-lh: 4.156rem;
         --t28-fs: 2rem;
         --t28-lh: 3rem;
         --t24-fs: 1.8rem;

@@ -23,3 +23,41 @@
         }
     }
 }
+
+.statistics {
+    background: $slate-cl;
+}
+
+.sidebar-left {
+    max-width: 360px;
+    .has-drop {
+        max-height: 53px;
+        @include transition(max-height $t ease);
+        &.active {
+            .has-drop-toggle {
+                @include transform(none);
+            }
+        }
+        &-toggle {
+            @include transform(rotate(-180deg));
+            @include transition(transform $t ease)
+        }
+    }
+    .sidebar-info {
+        width: calc(100% - 3rem);
+        &-user {
+            .user-work {
+                @include size(6px);
+                @include br(50%);
+                &.--green {
+                    background-color: $green-cl;
+                }
+            }
+            .user-image {
+                overflow: hidden;
+                @include size(60px);
+                @include br(50%);
+            }
+        }
+    }
+}
