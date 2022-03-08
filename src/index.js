@@ -9,14 +9,14 @@ $('.btn-menu.--close').on('click', function(e) {
 })
 
 // sidebar-left
-$('.sidebar-menu .has-drop a').on('click', function(e) {
-    e.preventDefault();
-})
-$('.sidebar-menu .has-drop').on('click', function(e) {
-    $(this).toggleClass('active')
-    if ($(this).hasClass('active')) {
-        $(this).css('max-height', $(this).prop('scrollHeight'))
+
+$('.sidebar-menu .has-drop > a').on('click', function(e) {
+    e.preventDefault()
+    const parentEle = $(this).parent()
+    parentEle.toggleClass('active')
+    if (parentEle.hasClass('active')) {
+        parentEle.css('max-height', parentEle.prop('scrollHeight'))
     } else {
-        $(this).css('max-height', '')
+        parentEle.css('max-height', '')
     }
 })
