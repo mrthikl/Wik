@@ -1,5 +1,4 @@
 // header
-
 $('.btn-menu.--open').on('click', function(e) {
     $('.nav').toggleClass('active')
 })
@@ -10,6 +9,12 @@ $('.btn-menu.--close').on('click', function(e) {
 
 // sidebar-left
 
+// open sidebar
+$(".btn-menu.--open-sidebar").on('click', function(e) {
+    $(".sidebar-left").toggleClass('active')
+})
+
+// dropdown 
 $('.sidebar-menu .has-drop > a').on('click', function(e) {
     e.preventDefault()
     const parentEle = $(this).parent()
@@ -19,4 +24,28 @@ $('.sidebar-menu .has-drop > a').on('click', function(e) {
     } else {
         parentEle.css('max-height', '')
     }
+})
+
+// scroll show btn-sidebar
+if ($(window).width() < 1279) {
+    $(window).on('scroll', function() {
+        const offsetY = $(window).scrollTop()
+        if (offsetY > 50) {
+            $('.btn-menu.--open-sidebar').addClass('activeScroll')
+        } else {
+            $('.btn-menu.--open-sidebar').removeClass('activeScroll')
+        }
+    })
+}
+
+// remove
+function stopP(i) {
+    i.on('click', function(e) {
+        e.stopPropagation()
+    })
+}
+stopP($('.sidebar-left'))
+stopP($('.btn-menu.--open-sidebar'))
+$(window).on('click', () => {
+    $('.sidebar-left').removeClass('active');
 })
