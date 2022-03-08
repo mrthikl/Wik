@@ -81,6 +81,21 @@
             }
         }
     }
+    &.--open-sidebar {
+        @include visible(0);
+        @include transition(opacity $t ease);
+        &.activeScroll {
+            @include visible(1);
+        }
+        svg {
+            path {
+                mix-blend-mode: darken;
+            }
+        }
+        @include xl {
+            display: none;
+        }
+    }
 }
 
 .darkmode-btn {

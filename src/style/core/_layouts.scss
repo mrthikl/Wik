@@ -58,3 +58,11 @@ body {
         // CSS responsive small mobile
     }
 }
+
+.statistics {
+    --width-sidebar: 360px;
+    @include xl {
+        margin-left: var(--width-sidebar);
+        width: calc(100% - var(--width-sidebar));
+    }
+}

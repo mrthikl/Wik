@@ -1,6 +1,9 @@
 extends templates/layout
-block content 
-    .sidebar-left.textbox.fixed.top-0.z-10.h-screen.bg-white(class="w-11/12")
+block content
+    
+    .btn-menu.--open-sidebar.fixed(class="top-2.5 left-2.5 ")
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+    .sidebar-left.textbox.fixed.top-0.z-10.h-screen.bg-white(class="w-11/12 ")
         .logo-bar.text-center.mb-10.px-4.pt-4(class="lg:px-6 pt-6")
             a.logo.rb.heading.--h2(href="/") /kwik/
         nav.sidebar-menu.overflow-y-auto.px-4(class="lg:px-6")
@@ -42,7 +45,19 @@ block content
                     img(src="./img/assets/moon.svg", alt="icon")
                     span Dark
 
-
-
-    main.statistics.bg-grey-200.h-screen(style="height:200vh")
-        h1 hello
+    main.statistics.bg-grey-200
+        .static-box.textbox.p-6.grid.gap-6(class="lg:pt-20 lg:pb-10 lg:px-24 lg:gap-20  lg:grid-cols-3")
+           .static-box-item.rounded-xl.bg-white.py-4.px-9(class="lg:col-start-1 lg:col-end-3 xl:py-7 px-14")
+                .item-title.flex.gap-2
+                    span.block.w-4.h-10.rounded.bg-green-300  
+                    span.text.--t22.rl Revenue  
+           .static-box-item.rounded-xl.bg-white.py-4.px-9(class="xl:py-7 px-14")
+        .static-box.textbox.p-6.grid.gap-6(class="lg:pt-10 lg:pb-20 lg:px-24 lg:gap-20  lg:grid-cols-2")
+            .static-box-item.rounded-xl.bg-white.py-4.px-9(class="xl:py-7 px-14")
+                .item-title.flex.gap-2
+                    span.block.w-4.h-10.rounded.bg-pink-300  
+                    span.text.--t22.rl This Month  
+            .static-box-item.rounded-xl.bg-white.py-4.px-9(class="xl:py-7 px-14")
+                .item-title.flex.gap-2
+                    span.block.w-4.h-10.rounded.bg-green-300  
+                    span.text.--t22.rl Top Month  

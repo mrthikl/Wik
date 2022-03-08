@@ -63,4 +63,18 @@
             }
         }
     }
+    @include maxW($xl-max) {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        @include transform(translateX(-130%));
+        @include transition(transform $t ease);
+        &.active {
+            transform: none;
+        }
+    }
+}
+
+.static-box {
+    &-item {
+        min-height: 370px;
+    }
 }
