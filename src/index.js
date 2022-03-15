@@ -26,14 +26,14 @@ $('.sidebar-menu .has-drop > a').on('click', function(e) {
     }
 })
 
-// scroll show btn-sidebar
+// scroll 
 if ($(window).width() < 1279) {
     $(window).on('scroll', function() {
         const offsetY = $(window).scrollTop()
         if (offsetY > 50) {
-            $('.btn-menu.--open-sidebar').addClass('activeScroll')
+            $('.header').addClass('activeScroll')
         } else {
-            $('.btn-menu.--open-sidebar').removeClass('activeScroll')
+            $('.header').removeClass('activeScroll')
         }
     })
 }

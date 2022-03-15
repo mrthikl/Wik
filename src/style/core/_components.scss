@@ -26,10 +26,13 @@
 
 .statistics {
     background: $slate-cl;
+    padding-top: var(--height-header);
 }
 
 .sidebar-left {
     max-width: 360px;
+    top: 0;
+    height: 100vh;
     .has-drop {
         max-height: 53px;
         @include transition(max-height $t ease);
@@ -48,6 +51,7 @@
         @include customscroll(5px, transparent, $slate-cl)
     }
     .sidebar-info {
+        width: 100%;
         &-user {
             .user-work {
                 @include size(6px);
@@ -70,6 +74,10 @@
         &.active {
             transform: none;
         }
+    }
+    @include xl {
+        top: calc(var(--height-header) - 1px);
+        height: calc(100vh - var(--height-header));
     }
 }
 

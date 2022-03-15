@@ -1,6 +1,10 @@
 header.header.w-full.fixed.top-0.z-10
     .container.textbox.m-auto.flex.justify-between.items-center
-        a.logo.flex.items-center.rl.text.--t28(href="/") /kwik/
+        .left.flex.gap-4 
+            .btn-menu.--open-sidebar
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            a.logo.flex.items-center.rl.text.--t28(href="/") /kwik/
+
         nav.menu.hidden(class="lg:block")
             ul.flex.gap-20.r.text.--t24 
                 li 
@@ -9,7 +13,8 @@ header.header.w-full.fixed.top-0.z-10
                     a(href="statistics.html") FAQs
                 li  
                     a(href="/") Widgets
-        .right.flex.items-center.gap-10
+
+        .right.flex.items-center.gap-4
             .btn-header.rl.text.--t28.text-white.cursor-pointer.bg-indigo-500.rounded-b-xl Join Us
             .btn-menu.--open.relative.flex.items-center(class="lg:hidden") 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>

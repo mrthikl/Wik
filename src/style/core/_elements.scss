@@ -52,7 +52,7 @@
 }
 
 .btn-header {
-    padding: 12px 23px;
+    padding: 12px 15px;
     @include md {
         padding: 24px 57px;
     }
@@ -82,11 +82,8 @@
         }
     }
     &.--open-sidebar {
-        @include visible(0);
+        display: none;
         @include transition(opacity $t ease);
-        &.activeScroll {
-            @include visible(1);
-        }
         svg {
             path {
                 mix-blend-mode: darken;

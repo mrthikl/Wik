@@ -1,5 +1,7 @@
 .header {
     height: var(--height-header);
+    @include transition($t ease);
+    transition-property: background, box-shadow;
     .menu {
         @include mid(false);
     }
@@ -7,5 +9,23 @@
         .menu {
             display: none;
         }
+    }
+    @include maxW($xl-max) {
+        &.activeScroll {
+            background: $white-cl;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+}
+
+.static-main+.header {
+    @include maxW($xl-max) {
+        .btn-menu.--open-sidebar {
+            display: flex;
+        }
+    }
+    @include xl {
+        background: $white-cl;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }

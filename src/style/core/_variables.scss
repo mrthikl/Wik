@@ -18,26 +18,26 @@ $xl2-max: ($xl2-min - 1px); // Small Mobile
 $white-cl: #fff;
 $black-cl: #000;
 $dark-cl: rgb(63, 63, 63);
-$blue-cl: #6366F1;
-$orange-cl: #E05023;
+$blue-cl: #6366f1;
+$orange-cl: #e05023;
 $green-cl: #059669;
-$slate-cl: #E2E8F0;
+$slate-cl: #e2e8f0;
 // darkmode
 $t: 0.5s;
 :root {
     // font-size & line-height heading
-    --h1-fs: 9.6rem;
-    --h1-lh: 11.25rem;
-    --h2-fs: 4.4rem;
-    --h2-lh: 5.156rem;
+    --h1-fs: 7.6rem;
+    --h1-lh: 9.25rem;
+    --h2-fs: 3.4rem;
+    --h2-lh: 4.156rem;
     --body-fs: 1.8rem;
     --body-lh: 2.4rem;
-    --t28-fs: 2.8rem;
-    --t28-lh: 3.281rem;
-    --t24-fs: 2.4rem;
-    --t24-lh: 2.813rem;
-    --t22-fs: 2.2rem;
-    --t22-lh: 2.578rem;
+    --t28-fs: 2.3rem;
+    --t28-lh: 2.9rem;
+    --t24-fs: 2.1rem;
+    --t24-lh: 2.5rem;
+    --t22-fs: 1.9rem;
+    --t22-lh: 2.8rem;
     --t21-fs: 2.1rem;
     --t21-lh: 2.461rem;
     --t20-fs: 2rem;
@@ -53,10 +53,10 @@ $t: 0.5s;
     @media (max-width: $lg-max) {}
     @media (max-width: $md-max) {
         --height-header: 54px;
-        --h1-fs: 6rem;
-        --h1-lh: 7rem;
-        --h2-fs: 3.4rem;
-        --h2-lh: 4.156rem;
+        --h1-fs: 5rem;
+        --h1-lh: 6rem;
+        --h2-fs: 3rem;
+        --h2-lh: 4rem;
         --t28-fs: 2rem;
         --t28-lh: 3rem;
         --t24-fs: 1.8rem;
